@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <title>Lua-de-mel</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/casopratico.css">
+    <meta name="description" content="Vestuários e assessórios">
+    <meta name="author" content="Luciana da Cruz">
+    <script src="https://kit.fontawesome.com/7147b9e925.js" crossorigin="anonymous"></script>
+
+    <style>
+        .portefolio2 {
+            padding-bottom: 50px;
+        }
+
+        .portefolio-container2 {
+            display: grid;
+            gap: 1.2rem;
+            justify-content: center;
+        }
+
+        .portefolio-box2 {
+            position: relative;
+            border-radius: 0.6rem;
+            box-shadow: 0 0 0.6rem var(blue);
+            overflow: hidden;
+            display: flex;
+        }
+
+        .portefolio-box2 img {
+            transition: 0.5 s ease;
+        }
+
+        .portefolio-box2 img:hover {
+            transform: scale(1.1);
+        }
+
+        .portefolio-box2 .portefolio-layer2 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(transparent, var(--main-color--));
+            display: flex;
+
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            transform: translateY(50rem);
+            transition: 0.5s ease;
+        }
+
+        .portefolio-box2:hover .portefolio-layer2 {
+            transform: translateY(0);
+
+        }
+
+        .portefolio-layer2 h4 {
+            font-size: 1.8rem;
+        }
+
+        .portefolio-layer2 a {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 3rem;
+            height: 3rem;
+            background: #c8c8c8;
+            border-radius: 50%;
+        }
+
+        .portefolio-layer2 p {
+            margin: 0.2rem 0 0.5rem;
+        }
+
+        .portefolio-layer2 a i {
+            font-size: 1.2rem;
+            color: var(--bg--color-02);
+        }
+
+
+        h1 {
+            padding: 30px;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar" id="navbarprincipal">
+
+    </div>
+
+    <br>
+
+    <div class="navbar">
+        <a href="javascript-casopratico.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Serviços<i class="fa fa-caret-
+      down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="vestuarios_assessorios.html">Vestuários e assessórios</a></li>
+                <a href="lua-de-mel.html">Destinos e Lua-de-mel</a>
+                <a href="saloes-festa.html">Salões de festa</a>
+            </div>
+        </div>
+        <a href="portefolio.html">Portefólio</a>
+        <a href="orcamento.html">Orçamento</a>
+        <a href="javascript-casopratico.html#contato">Contactos</a>
+
+    </div>
+
+    <h1>Destinos para a Lua-de-mel</h1>
+    <section class="portefolio2" id="portefolio2">
+
+        <div class="portefolio-container2">
+            <div class="portefolio-box2" data-title="Ilhas Maldivas" data-images="img/maldivas1.jpg,img/maldivas1.jpg,img/maldivas1.jpg,img/maldivas1.jpg">
+                <img src="img/ilhasmaldivas.jpg" alt="maldivas" style="height: 500px; width: 600px;">
+                <div class="portefolio-layer2">
+                    <h4 style="color: white; font-family: fantasy; font-size: 50px;">Ilhas Maldivas</h4>
+                    <p style="color: white; font-size: 30px;">Desde 1500€ por pessoa<br><br>Tudo incluido</p>
+                    <a href="galeria.html"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="portefolio-box2">
+                <img src="img/venezA.jpg" alt="Veneza" style="height: 500px; width: 600px;">
+                <div class="portefolio-layer2">
+                    <h4 style="color: white; font-family: fantasy; font-size: 50px;">Veneza</h4>
+                    <p style="color: white; font-size: 30px;">Desde 500€ por pessoa<br><br>Tudo incluido</p>
+                    <a href="galeria2.html"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="portefolio-box2">
+                <img src="img/paris.jpeg" alt="paris" style="height: 500px; width: 600px;">
+                <div class="portefolio-layer2">
+                    <h4 style="color: white; font-family: fantasy; font-size: 50px;">Paris</h4>
+                    <p style="color: white; font-size: 30px;">Desde 400€ por pessoa<br><br>Tudo incluido</p>
+                    <a href="galeria3.html"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="portefolio-box2">
+                <img src="img/marrocos.jpg" alt="marrocos" style="height: 500px; width: 600px;">
+                <div class="portefolio-layer2">
+                    <h4 style="color: white; font-family: fantasy; font-size: 50px;">Marrocos</h4>
+                    <p style="color: white; font-size: 30px;">Desde 300€ por pessoa<br><br>Tudo incluido</p>
+                    <a href="galeria4.html"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+            <div class="portefolio-box2">
+                <img src="img/sao-tome-e-principe.jpg" alt="sao-tome-e-principe" style="height: 500px; width: 600px;">
+                <div class="portefolio-layer2">
+                    <h4 style="color: white; font-family: fantasy; font-size: 50px;">São Tomé e Principe</h4>
+                    <p style="color: white; font-size: 30px;">Desde 1200€ por pessoa<br><br>Tudo incluido</p>
+                    <a href="galeria5.html"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+            <div class="portefolio-box2">
+                <img src="img/cabo-verde.jpg" alt="cabo-verde" style="height: 500px; width: 600px;">
+                <div class="portefolio-layer2">
+                    <h4 style="color: white; font-family: fantasy; font-size: 50px;">Cabo Verde</h4>
+                    <p style="color: white; font-size: 30px;">Desde 1600€ por pessoa<br><br>Tudo incluido</p>
+                    <a href="galeira6.html"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="redes sociais">
+            <a href="#instagram"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#facebook"><i class="fa-brands fa-instagram" style="color:#FF69B4"></i></a>
+            <a href="#paypal"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#twiter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#inkelin"><i class="fa-brands fa-paypal"></i></a>
+        </div>
+        <p>Luciana da Cruz</p>
+    </footer>
+
+    <script text="javascript" src="javascript/casopratico.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+   <title>Galeria3-Paris</title>
+   <meta charset="UTF-8">
+   <meta name="description" content="Galeria3">
+
+   <style>
+      * {
+         box-sizing: border-box;
+      }
+
+      body {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         margin: 0;
+         min-height: 100vh;
+      }
+
+      .carrosel {
+         box-shadow: 2px 2px 4px black;
+         overflow: hidden;
+         height: 500px;
+         width: 888px;
+         position: relative;
+      }
+
+      .container-carrosel {
+         display: flex;
+         transition: transform 0.5s ease-in-out;
+      }
+
+      img {
+         object-fit: cover;
+        height: 500px;
+        width: 888px;
+      }
+   </style>
+</head>
+
+<body onload="carrossel()">
+   <div class="carrosel">
+      <div class="container-carrosel" id="carrosel">
+         <img src="img/paris1.jpg">
+         <img src="img/paris2.jpg">
+         <img src="img/paris3.jpg">
+         <img src="img/paris4.jpg">
+         <img src="img/paris5.jpg">
+         <img src="img/paris6.jpg">
+      </div>
+   </div>
+
+   </div>
+
+   <script text="javascript" src="javascript/casopratico.js"></script>
+</body>
+
+</html>

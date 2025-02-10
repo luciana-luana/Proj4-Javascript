@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <title>casopratico-Javascript</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/casopratico.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="casopratico">
+    <meta name="author" content="Luciana da Cruz">
+    <script src="https://kit.fontawesome.com/7147b9e925.js" crossorigin="anonymous"></script>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBn7fd-hZ8qFcHa66Rq8GASryLVRP9JfQo&callback=inicializar"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body onload="inicializar()">
+   <div class="navbar" id="navbarprincipal">
+
+   </div>
+
+    <br>
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Serviços<i class="fa fa-caret-
+      down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="vestuarios_assessorios.html">Vestuários e assessórios</a></li>
+                <a href="lua-de-mel.html">Destinos e Lua-de-mel</a>
+                <a href="saloes-festa.html">Salões de festa</a>
+            </div>
+        </div>
+        <a href="portefolio.html">Portefólio</a>
+        <a href="orcamento.html">Orçamento</a>
+        <a href="#contato">Contactos</a>
+
+
+    </div>
+   
+  
+    <header style="text-align: center;">
+        
+    <img src="img/bannercasamento.png" style="width: 1100px; height: 450px; padding-top: 80px; padding-bottom: 80px;">
+        
+    </header>
+
+    <article>
+
+        <iframe id="video" width="1100px" height="500px" src="https://www.youtube.com/embed/zecfNtAp_Nc?si=dAFdXx8ZuR05DV5v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+           
+    </article>
+    <div id="contato" class="Contactos">
+        <h5>CONTACTOS</h5>
+        <p id="paragrafo">Envia uma mensagem</p>
+
+    </div>
+    <input id="direccao" type="textbox" placeholder="Digite o ponto de partida" style=" height: 25px; margin-left: 50px;"">
+    <input type="button" id="btn-contato2" value="Calcular Rota" onclick="geo()">
+    <br /><br /><br />
+<div id="mapa" style="position: relative; width: 450px;px;height: 400px; margin-left: 50px;"></div>
+
+
+
+
+    <div class="icones">
+        <ul>
+            <li><i class="fa-solid fa-location-dot fa-bounce" style="color: #01060e;"></i>Rua José Falcão, 225, Porto</li>
+            <li><i class="fa-sharp fa-solid fa-phone fa-shake" style="color: #00040a;"></i>(+351)912649938</li>
+            <li><i class="fa-solid fa-envelope" style="color: #000714;"></i>lucianadacruz.unicv@gmail.com</li>
+        </ul>
+        <form id="formulario" onsubmit="validarForm(this)">
+            <table>
+                <tr>
+                    <td><input type=”text” name=”text” id=”name1” placeholder="Nome" required>*</td>
+                    <td><input type=”text” name=”text” id=”apelido1” placeholder="Apelido" required>*</td>
+                    <td><input type=”text” name=”text” id=”telemóvel” placeholder="Telemóvel" required>*</td>
+                    <td><input type="date" name=”text” id=”data” required></td>
+                    <td><input type=”text” name=”text” id=”email1” placeholder="Email" required>*</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type=”text” name=”text” id=”mensagem” placeholder="Motivo do contato" required>*</td>
+                </tr>
+                <tr>
+                    <td><button id="btn-contato" type="submit"> Enviar</button></td>
+                </tr>
+            </table>
+        </form>
+
+    </div>
+
+    <footer>
+        <div class="redes sociais">
+            <a href="#instagram"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#facebook"><i class="fa-brands fa-instagram" style="color:#FF69B4"></i></a>
+            <a href="#paypal"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#twiter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#inkelin"><i class="fa-brands fa-paypal"></i></a>
+        </div>
+        <p>Luciana da Cruz</p>
+    </footer>
+    <script text="javascript" src="javascript/casopratico.js"></script>
+
+    </body>
+
+</html>

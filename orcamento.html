@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <title>Javascript-casopratico</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/casopratico.css">
+    <meta name="description" content="Javascript-casopratico">
+    <meta name="author" content="Luciana da Cruz">
+
+</head>
+<style>
+    * {
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+    }
+
+    body {
+        padding: 1rem;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: .3rem;
+        width: 500px;
+        margin: 0 auto;
+    }
+
+    label {
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    input,
+    select,
+    textarea {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1.1rem;
+    }
+
+    button {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #c8c8c8;
+        color: black;
+        font-size: 1.1rem;
+        cursor: pointer;
+
+    }
+    .error{
+        color: red;
+        display: none;
+    }
+</style>
+
+<body onload="">
+
+    <h1>Solicite seu Orçamento</h1>
+    <form id="formulario" onsubmit="return validarchave(this)">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" placeholder="Nome" required><br>
+
+        <label for="apelido">Apelido:</label>
+        <input type="text" id="apelido" name="apelido" placeholder="Apelido" required><br>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" placeholder="nome@gmail.com" required><br><br>
+       
+        <label for="orcamento" required>Pedido de Orçamento</label><br><br>
+        <select name="orcamento" id="orcamento">
+            <option value="0">Tipos de Páginas Web</option>
+            <option value="200">Página Institucional-200€</option>
+            <option value="300">Loja Virtual (E-commerce)-300€</option>
+            <option value="400">Portfólio Online-400€</option>
+            <option value="500">Site de Reservas (Hotéis, Restaurantes)-500€</option>
+
+        </select><br><br>
+
+        <label for="name">Prazo em meses:</label>
+        <input type="text" id="numero" name="numero" placeholder="Prazo em meses" required><br>
+
+        <br><br><label for="checkbox" id="selecionar" required>Marque os separadores desejados</label>
+        <br><input type="checkbox" name="checkboox" value="Opção 1">Quem somos
+        <input type="checkbox" name="checkboox" value="Opção 2">Onde estamos
+        <input type="checkbox" name="checkboox" value="Opção 3">Galeria de fotografias
+        <input type="checkbox" name="checkboox" value="Opção 4">eCommerce<br>
+        <input type="checkbox" name="checkboox" value="Opção 5">Gestão interna
+        <input type="checkbox" name="checkboox" value="Opção 6">Notícias<br>
+        <input type="checkbox" name="checkboox" value="Opção 7">Redes sociais
+
+        <br><br>
+        <p>Orçamento estimado<br>(É um valor meramente indicativo, pode sofrer alterações)</p><br>
+        <div  id="resultado"></div><br>
+        <div id="resultadoCheckboox"></div><br>
+
+        <button type="button" onclick="calcularOrcamento()">Calcular Orçamento</button><br>
+
+        <button type="submit">Enviar</button>
+
+    </form>
+
+    <script type="text/javascript" src="javascript/casopratico.js"></script>
+</body>
+
+</html>
